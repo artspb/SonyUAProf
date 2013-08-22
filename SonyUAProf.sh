@@ -15,6 +15,8 @@ if [[ -z ${1} ]] ;
 then
 	echo -n "Model (e.g. LT22i): "
 	read l
+else
+  l=${1}
 fi
 
 echo "finding..."
