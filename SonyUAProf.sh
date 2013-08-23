@@ -5,16 +5,18 @@
 HELP_LINES="-h|--help"
 if [[ ${1} =~ ${HELP_LINES} ]] ;
 then
-	echo "Returns user-agent profile by Sony mobile phone model name"
-	echo "Usage: ./SonyUAProf.sh [MODELNAME]"
-	echo "e.g. ./SonyUAProf.sh LT22i"
-	exit 0
+  echo "Returns user-agent profile by Sony mobile phone model name"
+  echo "Usage: ./SonyUAProf.sh [MODELNAME]"
+  echo "e.g. ./SonyUAProf.sh LT22i"
+  exit 0
 fi
 
 if [[ -z ${1} ]] ;
 then
-	echo -n "Model (e.g. LT22i): "
-	read l
+  echo -n "Model (e.g. LT22i): "
+  read l
+else
+  l=${1}
 fi
 
 echo "finding..."
